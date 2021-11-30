@@ -12,13 +12,13 @@ from normalization import *
 mhd_path is the path containing all original image data
 
 '''
-mhd_path = "/data1/data/LungNoduleDB/"
-realcube_annotation_path = "/data1/users/vayu/Music/Lndb-pred/realcube_w_coord.csv"
-fakecube_annotation_path = "/data1/users/vayu/Music/Lndb-pred/fakecube_w_coord.csv"
+mhd_path = "/home/arppit/Lndb-pred/mhds/"
+realcube_annotation_path = "/home/arppit/Lndb-pred/realcube_w_coord.csv"
+fakecube_annotation_path = "/home/arppit/Lndb-pred/fakecube_w_coord.csv"
 
-sm_cube_output_path = "/data1/users/vayu/Music/small"
-med_cube_output_path = "/data1/users/vayu/Music/med"
-lg_cube_output_path = "/data1/users/vayu/Music/large"
+sm_cube_output_path = "/home/arppit/Lndb-pred/small"
+med_cube_output_path = "/home/arppit/Lndb-pred/med"
+lg_cube_output_path = "/home/arppit/Lndb-pred/large"
 
 '''
 This function takes a dataframe containing nodule information that 

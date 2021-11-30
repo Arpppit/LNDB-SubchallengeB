@@ -11,17 +11,19 @@ import pickle
 from normalization import *
 
 # ------------------------------- #
-cube_generation_dir = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/"
-mhd_path = "/global/project/hpcg1553/LNDbChallenge/LNDb_original_data/testPadding/"
+cube_generation_dir = "/data1/users/vayu/Music/lndb_preprocess/"
+mhd_path = "/data1/data/LungNoduleDB/"
 # mhd_path = "/global/project/hpcg1553/LNDbChallenge/LNDb_original_data/data0to4/"
-realcube_annotation_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/realcube_w_coord.csv"
-fakecube_annotation_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/fakecube_w_coord.csv"
+realcube_annotation_path = "/data1/users/vayu/Music/Lndb-pred/realcube_w_coord.csv"
+fakecube_annotation_path = "/data1/users/vayu/Music/Lndb-pred/fakecube_w_coord.csv"
 # plot_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_plotting/"
 
-sm_cube_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_CNN/all_cubes_6x6x6/"
-med_cube_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_CNN/all_cubes_10x10x10/"
-lg_cube_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_CNN/all_cubes_20x20x20/"
-
+#sm_cube_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_CNN/all_cubes_6x6x6/"
+#med_cube_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_CNN/all_cubes_10x10x10/"
+#lg_cube_output_path = "/global/home/hpc4535/LNDbChallenge/LNDb_preprocessing_generate_all_cubes/cubes_for_CNN/all_cubes_20x20x20/"
+sm_cube_output_path = "/data1/users/vayu/Music/small"
+med_cube_output_path = "/data1/users/vayu/Music/med"
+lg_cube_output_path = "/data1/users/vayu/Music/large"
 # ------------------------------- #
 
 def extract_nodule_cubes_from_mhd_for_CNN(mhd_path,\
